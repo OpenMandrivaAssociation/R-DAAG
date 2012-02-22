@@ -9,10 +9,11 @@ Group:            Sciences/Mathematics
 License:          Unlimited
 URL:              http://cran.r-project.org/web/packages/%{packname}/index.html
 Source0:          http://cran.r-project.org/src/contrib/%{packname}_%{version}.tar.gz
-Requires:         R-MASS R-rpart R-randomForest R-boot R-survival 
-Requires:         R-lattice R-leaps R-oz R-lme4 R-quantreg 
-BuildRequires:    R-devel Rmath-devel texlive-collection-latex R-MASS R-rpart R-randomForest R-boot R-survival
-BuildRequires:    R-lattice R-leaps R-oz R-lme4 R-quantreg 
+Requires:         R-MASS R-rpart R-randomForest R-boot R-survival
+Requires:         R-lattice R-leaps R-oz R-lme4 R-quantreg
+BuildRequires:    R-devel Rmath-devel texlive-collection-latex R-MASS
+BuildRequires:    R-rpart R-randomForest R-boot R-survival
+BuildRequires:    R-lattice R-leaps R-oz R-lme4 R-quantreg
 
 %description
 various data sets used in examples and exercises in the book Maindonald,
