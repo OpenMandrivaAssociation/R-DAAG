@@ -1,14 +1,16 @@
 %global packname  DAAG
 %global rlibdir  %{_libdir}/R/library
 
+%define debug_package %{nil}
+
 Name:             R-%{packname}
-Version:          1.12
+Version:          1.15
 Release:          1
 Summary:          Data Analysis And Graphics data and functions
 Group:            Sciences/Mathematics
 License:          Unlimited
 URL:              http://cran.r-project.org/web/packages/%{packname}/index.html
-Source0:          http://cran.r-project.org/src/contrib/%{packname}_%{version}.tar.gz
+Source0:          http://cran.r-project.org/src/contrib/DAAG_1.15.tar.gz
 Requires:         R-MASS R-rpart R-randomForest R-boot R-survival
 Requires:         R-lattice R-leaps R-oz R-lme4 R-quantreg
 BuildRequires:    R-devel Rmath-devel texlive-collection-latex R-MASS
@@ -40,6 +42,7 @@ rm -f %{buildroot}%{rlibdir}/R.css
 %doc %{rlibdir}/%{packname}/DESCRIPTION
 %{rlibdir}/%{packname}/INDEX
 %{rlibdir}/%{packname}/NAMESPACE
+%{rlibdir}/%{packname}/NEWS
 %{rlibdir}/%{packname}/Meta
 %{rlibdir}/%{packname}/R
 %{rlibdir}/%{packname}/data
