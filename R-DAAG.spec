@@ -4,13 +4,13 @@
 %define debug_package %{nil}
 
 Name:             R-%{packname}
-Version:          1.15
+Version:          1.16
 Release:          1
 Summary:          Data Analysis And Graphics data and functions
 Group:            Sciences/Mathematics
 License:          Unlimited
 URL:              http://cran.r-project.org/web/packages/%{packname}/index.html
-Source0:          http://cran.r-project.org/src/contrib/DAAG_1.15.tar.gz
+Source0:          http://cran.r-project.org/src/contrib/DAAG_1.16.tar.gz
 Requires:         R-MASS R-rpart R-randomForest R-boot R-survival
 Requires:         R-lattice R-leaps R-oz R-lme4 R-quantreg
 BuildRequires:    R-devel Rmath-devel texlive-collection-latex R-MASS
@@ -49,3 +49,4 @@ rm -f %{buildroot}%{rlibdir}/R.css
 %{rlibdir}/%{packname}/help
 %{rlibdir}/%{packname}/misc
 %{rlibdir}/%{packname}/seedrates.txt
+
