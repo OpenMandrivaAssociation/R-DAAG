@@ -4,18 +4,17 @@
 %define debug_package %{nil}
 
 Name:             R-%{packname}
-Version:          1.15
+Version:          1.16
 Release:          1
 Summary:          Data Analysis And Graphics data and functions
 Group:            Sciences/Mathematics
 License:          Unlimited
 URL:              http://cran.r-project.org/web/packages/%{packname}/index.html
-Source0:          http://cran.r-project.org/src/contrib/DAAG_1.15.tar.gz
-Requires:         R-MASS R-rpart R-randomForest R-boot R-survival
-Requires:         R-lattice R-leaps R-oz R-lme4 R-quantreg
-BuildRequires:    R-devel Rmath-devel texlive-collection-latex R-MASS
-BuildRequires:    R-rpart R-randomForest R-boot R-survival
-BuildRequires:    R-lattice R-leaps R-oz R-lme4 R-quantreg
+Source0:          http://cran.r-project.org/src/contrib/DAAG_1.16.tar.gz
+Requires:         R-MASS R-rpart R-randomForest R-boot R-survival 
+Requires:         R-lattice R-leaps R-oz R-lme4 R-quantreg 
+BuildRequires:    R-devel Rmath-devel texlive-collection-latex R-MASS R-rpart R-randomForest R-boot R-survival
+BuildRequires:    R-lattice R-leaps R-oz R-lme4 R-quantreg 
 
 %description
 various data sets used in examples and exercises in the book Maindonald,
@@ -49,3 +48,13 @@ rm -f %{buildroot}%{rlibdir}/R.css
 %{rlibdir}/%{packname}/help
 %{rlibdir}/%{packname}/misc
 %{rlibdir}/%{packname}/seedrates.txt
+
+
+%changelog
+* Sun Feb 19 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.12-1
++ Revision: 777463
+- Import R-DAAG
+- Import R-DAAG
+
+
+
