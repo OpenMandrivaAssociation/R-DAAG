@@ -5,7 +5,7 @@
 
 Name:             R-%{packname}
 Version:          1.16
-Release:          1
+Release:          2
 Summary:          Data Analysis And Graphics data and functions
 Group:            Sciences/Mathematics
 License:          Unlimited
