@@ -9,7 +9,7 @@ Release:          2
 Summary:          Data Analysis And Graphics data and functions
 Group:            Sciences/Mathematics
 License:          Unlimited
-URL:              http://cran.r-project.org/web/packages/%{packname}/index.html
+URL:              https://cran.r-project.org/web/packages/%{packname}/index.html
 Source0:          http://cran.r-project.org/src/contrib/DAAG_1.16.tar.gz
 Requires:         R-MASS R-rpart R-randomForest R-boot R-survival 
 Requires:         R-lattice R-leaps R-oz R-lme4 R-quantreg 
